@@ -22,9 +22,9 @@ if __name__ == "__main__":
 
     db.create_table('id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(50), grade INT')
 
-    db.insert_create({'name': 'Napoleon', 'grade': 85})
-    db.insert_create({'name': 'Putin', 'grade': 90})
-    db.insert_create({'name': 'Trump', 'grade': 78})
+    db.insert({'name': 'Napoleon', 'grade': 85})
+    db.insert({'name': 'Putin', 'grade': 90})
+    db.insert({'name': 'Trump', 'grade': 78})
 
     print("\nВсе студенты:")
     for student in db.select():

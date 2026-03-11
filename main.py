@@ -63,7 +63,7 @@ class SQLTable:
             self.columns = []
 
     # операции crud
-    def insert_create(self, data):
+    def insert(self, data):
         cursor = self.connection.cursor()
         try:
             columns = ', '.join(data.keys())
@@ -316,7 +316,7 @@ class SQLTable:
                 reader = csv.DictReader(f)
 
                 for row in reader:
-                    self.insert_create(row)
+                    self.insert(row)
 
             print("Импорт из CSV выполнен")
         except Exception as e:
