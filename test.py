@@ -3,7 +3,7 @@ import json
 
 
 db_config = {
-    'host': 'srv221-h-st.jino.ru',
+    'host': 'srv221-h-st.jino.ru', 
     'user': 'j30084097_13418',
     'password': 'pPS090207/()',
     'database': 'j30084097_13418',
